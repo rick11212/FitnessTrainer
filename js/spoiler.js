@@ -1,9 +1,13 @@
 const title = document.querySelectorAll('.how__title');
-const span = document.querySelectorAll('.how__span');
 
 title.forEach(function (item) {
 	item.addEventListener('click', function () {
 		this.nextElementSibling.classList.toggle('how__hidden');
+		this.previousElementSibling.classList.toggle('how__hidden');
+		this.classList.toggle('how__box-shadow');
 	})
 });
+
+
+
 
