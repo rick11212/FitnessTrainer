@@ -749,7 +749,7 @@ margin: -30px 0px 0px 0px;
 	font-size: 18px;
 	line-height: 1.27;
 	color: #B8B8B8;
-	margin: 0px 0px 280px 0px;
+	margin: 0px 0px 100px 0px;
 }
 
 .customes__image {
@@ -773,6 +773,27 @@ margin: -30px 0px 0px 0px;
 	top: 115px;
 	background: rgba(255, 230, 0, 0.1);
 	border-radius: 234px 234px 0px 0px;
+}
+.customes__doted {
+	display: flex;
+	gap: 5px;
+	margin: 0px 0px 180px 0px;
+	position: relative;
+	left: 70px;
+}
+
+.customes__dot {
+	width: 12px;
+	height: 12px;
+	background: #313131;
+	border-radius: 50%;
+	
+}
+.customes__dot--white {
+	width: 12px;
+	height: 12px;
+	background: #EEF7FB;
+	border-radius: 50%;
 }
 /* ==========================================decor================================ */
 .dekor-1 {
@@ -865,6 +886,7 @@ margin: -30px 0px 0px 0px;
 	color: #FFFFFF;
 	border-bottom: 1px solid #E0E0E0;
 	padding: 10px 20px;
+	position: relative;
 }
 .footer__input::placeholder{
 	font-size: 20px;
