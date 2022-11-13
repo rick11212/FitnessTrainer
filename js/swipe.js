@@ -1,9 +1,13 @@
-const swipe = document.querySelectorAll('.customes__dot');
-const row = document.querySelectorAll('.customes__row');
-
-swipe.forEach(function (item) {
-	item.addEventListener('click', function () {
-		this.previousElementSibling.classList.toggle('customes__dot--white');
-		this.classList.toggle('customes__dot--white');
-	})
+new Swiper('.swiper', {
+	navigation: {
+		nextEl: '.swiper__button-next',
+		prevEl: '.swiper__button-prew'
+	},
+	pagination: {
+		el: '.customes__pagination',
+		clickable: true
+	},
+	autoplay: true,
+	interval: 4000,
+	swipe: true
 });
